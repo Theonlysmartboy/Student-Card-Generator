@@ -8,54 +8,47 @@
   <title>Document</title>
 </head>
 <body>
-
   <div class="back">
     <form>
       <h3>Please fill-in the form</h3>
       <label>Full Name</label>
-      <input type="text" id="inName"   placeholder="Your name...">
+      <input type="text" id="inName" placeholder="Your name...">
       <label>Date of birth</label>
-      <input type="date" id="inBirth"  placeholder="Date of birth...">
+      <input type="date" id="inBirth" placeholder="Date of birth...">
       <label>Field</label>
-      <input type="text" id="inField"  placeholder="Field...">
+      <input type="text" id="inField" placeholder="Field...">
       <label>Year</label>
       <input type="number" id="inYear" placeholder="Year...">
-      <label>Subscription number</label>
-      <input type="number" id="inNum"  placeholder="Subscription number...">
+      <label>Admission number</label>
+      <input type="text" id="inNum" placeholder="Admission number...">
       <label for="file" class="upload">Upload an Image</label>
       <br>
       <span>Choose one that desrcibes you perfectly</span>
       <input type="file" id="file" accept="image/*" onchange="loadImage(event)">
     </form>
-      <button type="submit" id="preview">Preview</button>
-
-
+    <button type="submit" id="preview">Preview</button>
     <div class="container">
       <canvas id="result" class="card">
-
         <header id="head">
           <div class="camp">
-            <h4>Campus Card</h4>
-            <span>Undergraduate</span>
+            <h4>Maseno University</h4>
+            <span>Student Id Card</span>
           </div>
-          <img src="./lorem.jpg" id="logo">
+          <img src="logo.png" id="logo" alt="logo">
         </header>
-
         <div class="content">
-          <img src="" id="imgDisplayed">
+          <img src="" id="imgDisplayed" alt="passport">
           <ul>
             <li id="name"></li>
             <li id="birth"></li>
+            <li id="course"></li>
             <li id="fieldYear"></li>
-            <li>SubN°:<span id="num"></span></li>
+            <li>Adm No:<span id="num"></span></li>
           </ul>
         </div>
-
-    </canvas>
-    <button id="down">Download</button>
-  </div>
-
-
-  <script src="main.js"></script>
+      </canvas>
+      <button id="down">Download</button>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
